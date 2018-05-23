@@ -19,6 +19,7 @@
 # Copyright 2016-2017 Marc Lambrichs, unless otherwise noted.
 #
 class neo4j::config (
+  $allow_load_csv = $::neo4j::allow_load_csv,
   $dbms_mode    = $::neo4j::dbms_mode,
   $default_file = $::neo4j::default_file,
   $config_dir   = $::neo4j::config_dir,
@@ -56,7 +57,6 @@ class neo4j::config (
   ###
   ### neo4j.conf - general
   ###
-  $allow_load_csv                                     = $::neo4j::allow_load_csv,
   $browser_allow_outgoing_connections                 = $::neo4j::browser_allow_outgoing_connections
   $browser_credential_timeout                         = $::neo4j::browser_credential_timeout
   $browser_remote_content_hostname_whitelist          = $::neo4j::browser_remote_content_hostname_whitelist
