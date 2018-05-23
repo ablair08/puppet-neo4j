@@ -83,7 +83,7 @@ class neo4j::params {
   $dbms_connector_https_advertised_address                           = undef
   $dbms_connector_https_enabled                                      = true
   $dbms_connector_https_listen_address                               = ':7473'
-  $dbms_connectors_default_advertised_address                        = $::fqdn
+  $dbms_connectors_default_advertised_address                        = ${::ipaddress}
   $dbms_connectors_default_listen_address                            = '0.0.0.0'
   $dbms_ids_reuse_types_override                                     = [ 'RELATIONSHIP', 'NODE']
   $dbms_index_sampling_background_enabled                            = true
