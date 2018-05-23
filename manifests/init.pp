@@ -904,6 +904,7 @@
 # @param version [String] The version of the neo4 package.
 #
 class neo4j (
+  $allow_load_csv                                                    = $::neo4j::allow_load_csv,
   $data_prefix                                                       = $::neo4j::params::data_prefix,
   $edition                                                           = $::neo4j::params::edition,
   $group                                                             = $::neo4j::params::group,
@@ -919,7 +920,7 @@ class neo4j (
   $service_provider                                                  = $::neo4j::params::service_provider,
   $user                                                              = $::neo4j::params::user,
   $version                                                           = $::neo4j::params::version,
-  $allow_load_csv                                                    = $::neo4j::allow_load_csv,
+
 
   ### config default settings
   $default_file                                                      = $::neo4j::params::default_file,
