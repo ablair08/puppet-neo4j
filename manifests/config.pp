@@ -56,6 +56,7 @@ class neo4j::config (
   ###
   ### neo4j.conf - general
   ###
+  $allow_load_csv                                     = $::neo4j::allow_load_csv,
   $browser_allow_outgoing_connections                 = $::neo4j::browser_allow_outgoing_connections
   $browser_credential_timeout                         = $::neo4j::browser_credential_timeout
   $browser_remote_content_hostname_whitelist          = $::neo4j::browser_remote_content_hostname_whitelist
